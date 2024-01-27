@@ -778,26 +778,26 @@ h1 {
         stroke: #3498db!important;
         stroke-width: 10 !important;
     }
-    .mobile-phase{
-        display: block;
+    /* .mobile-phase{ */
+        /* display: block;
         border-bottom: 2px solid #3498db;
         border-radius: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 10px; */
         /* text-shadow: 0px 0px 2px white; */
-        box-shadow: -2px 2px 5px #8e44ad;
+        /* box-shadow: -2px 2px 5px #8e44ad; */
 
         /* background: linear-gradient(to left, #3498db, #8e44ad); */
-    }
+    /* } */
 
     #roadmap .phase {
         width: 25rem;
         margin-bottom: 40px;
     }
-    #roadmap .phase ul {
-        border-right: 3px solid #8e44ad;
-        border-left: 3px solid #8e44ad;
-        border-radius: 4px;
-    }
+    /* #roadmap .phase ul { */
+        /* border-right: 3px solid #8e44ad; */
+        /* border-left: 3px solid #8e44ad; */
+        /* border-radius: 4px; */
+    /* } */
 }
 
 @media screen and (max-width: 490px) {
