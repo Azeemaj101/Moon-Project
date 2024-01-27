@@ -7,7 +7,7 @@
     --primary-color: rgb(15, 24, 42);
     --secondary-color: rgb(26, 25, 36);
 }
- 
+
 body {
     background-color: var(--primary-color);
 }
@@ -82,12 +82,12 @@ body {
 
 }
 
-.text-with-background {
-    color: transparent; /* Make the text transparent */
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    background-clip: text; /* Standard property to support non-WebKit browsers */
-  }
+.gradient-text {
+    background: linear-gradient(to left, #3498db, #8e44ad);
+    /* Equivalent to from-blue-600 to-violet-600 */
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 .btn-primary {
     border-color: #007bce;
@@ -489,6 +489,10 @@ body {
     width: 80px;
 }
 
+.mobile-phase{
+    display: none;
+}
+
 .phase-indicator-l .line-l {
     position: absolute;
     right: 75px;
@@ -500,6 +504,11 @@ body {
     top: 16px;
 }
 
+.svg-line{
+    position: absolute;
+    top: 750px;
+}
+
 .OBots {
     background-color: rgb(15, 15, 15);
 }
@@ -507,11 +516,6 @@ body {
 .OB-Cards {
     width: 22rem;
     background-color: transparent;
-}
-
-.svg-line{
-    position: absolute;
-    top: 750px;
 }
 
 .back-to-top {
@@ -534,6 +538,7 @@ body {
     background-color: #0056b3;
 }
 
+
 .navbar {
     position: fixed;
     top: 0;
@@ -541,6 +546,10 @@ body {
     width: 100%;
     z-index: 1000;
     transition: transform 0.3s ease-in-out;
+}
+
+.navbar ul li a:focus{
+    color: #ccc;
 }
 
 .show-nav {
@@ -618,9 +627,6 @@ footer {
     border-color: #0056b3;
 }
 
-.mobile-phase{
-    display: none;
-}
 h1 {
     font-size: 90px;
     font-weight: 600;
@@ -774,30 +780,12 @@ h1 {
         font-weight: 400;
     }
     .adjusted-y2{
-        /* box-shadow: 0px 0px 15px red !important; */
-        stroke: #3498db!important;
-        stroke-width: 10 !important;
+        stroke-width: 4 !important;
     }
-    /* .mobile-phase{ */
-        /* display: block;
-        border-bottom: 2px solid #3498db;
-        border-radius: 10px;
-        margin-bottom: 10px; */
-        /* text-shadow: 0px 0px 2px white; */
-        /* box-shadow: -2px 2px 5px #8e44ad; */
-
-        /* background: linear-gradient(to left, #3498db, #8e44ad); */
-    /* } */
-
     #roadmap .phase {
         width: 25rem;
         margin-bottom: 40px;
     }
-    /* #roadmap .phase ul { */
-        /* border-right: 3px solid #8e44ad; */
-        /* border-left: 3px solid #8e44ad; */
-        /* border-radius: 4px; */
-    /* } */
 }
 
 @media screen and (max-width: 490px) {

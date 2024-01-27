@@ -41,32 +41,29 @@ window.addEventListener("scroll", function () {
   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
 });
 
-
 AOS.init({
-    duration: 800, // Duration of animation in milliseconds
-    easing: 'ease-in-out', // Timing function for the animation
-    once: true, // Whether animation should happen only once
-    mirror: false, // Whether elements should animate out while scrolling past them in reverse
-  });
+  duration: 800, // Duration of animation in milliseconds
+  easing: "ease-in-out", // Timing function for the animation
+  once: true, // Whether animation should happen only once
+  mirror: false, // Whether elements should animate out while scrolling past them in reverse
+});
 
+function adjustY2() {
+  const line = document.querySelector("#lineSvg line");
+  const screenWidth = window.innerWidth;
 
-  function adjustY2() {
-    const line = document.querySelector('#lineSvg line');
-    const screenWidth = window.innerWidth;
-
-    // Set different y2 values based on screen width
-    if (screenWidth < 992) {
-      line.setAttribute('y2', '84%');
-    }
-    else if (screenWidth < 1200) {
-      line.setAttribute('y2', '80.5%');
-    } else {
-      line.setAttribute('y2', '78%');
-    }
+  // Set different y2 values based on screen width
+  if (screenWidth < 992) {
+    line.setAttribute("y2", "84%");
+  } else if (screenWidth < 1200) {
+    line.setAttribute("y2", "80.5%");
+  } else {
+    line.setAttribute("y2", "78%");
   }
+}
 
-  // Call the function on page load
-  adjustY2();
+// Call the function on page load
+adjustY2();
 
-  // Attach the function to the window resize event
-  window.addEventListener('resize', adjustY2);
+// Attach the function to the window resize event
+window.addEventListener("resize", adjustY2);
