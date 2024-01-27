@@ -723,6 +723,9 @@ h1 {
         position: absolute;
         top: 989px;
     }
+    .bot-cards {
+        width: 100%;
+    }
     #roadmap .phase {
         width: 18.5rem;
         font-size: 12px !important;
@@ -771,6 +774,12 @@ h1 {
     .phase-indicator-l, .phase-indicator {
         display: none;
     }
+    .Tok-cards-L2:first-child, .Tok-cards-L2:last-child, .Tok-cards:first-child, .Tok-cards:last-child {
+        border-radius: 0px;
+    }
+    .Tok-cards {
+        width: 100%;
+    }
     .main-section{
         padding-top: 80px;
     }
@@ -782,20 +791,8 @@ h1 {
         stroke-width: 4 !important;
     }
     #roadmap .phase {
-        width: 25rem;
+        width: 100%;
         margin-bottom: 40px;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    #roadmap .phase {
-        width: 17rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .Tok-cards-L2:first-child, .Tok-cards-L2:last-child, .Tok-cards:first-child, .Tok-cards:last-child {
-        border-radius: 0px;
     }
 }
 
