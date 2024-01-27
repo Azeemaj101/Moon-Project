@@ -1,0 +1,814 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+:root {
+    --primary-color: rgb(15, 24, 42);
+    --secondary-color: rgb(26, 25, 36);
+}
+ 
+body {
+    background-color: var(--primary-color);
+}
+
+.navBg {
+    background-color: #0f182a;
+}
+
+.custom-link {
+    color: #ffffff;
+    /* text-gray-300 */
+    font-size: 1rem;
+    /* text-base */
+    font-weight: 500;
+    /* font-medium */
+    text-decoration: none;
+    /* Remove underline */
+    transition: background 0.3s ease, color 0.3s ease;
+    /* Hover transition */
+}
+
+.custom-link:hover {
+    background: linear-gradient(to left, #3498db, #8e44ad);
+    /* hover:bg-gradient-to-tl from-blue-600 to-violet-600 */
+    color: transparent;
+    /* hover:text-transparent */
+    background-clip: text;
+    /* hover:bg-clip-text */
+}
+
+.main-bg-color {
+    background: linear-gradient(to left, #3498db, #8e44ad);
+    /* hover:bg-gradient-to-tl from-blue-600 to-violet-600 */
+    color: transparent;
+    /* hover:text-transparent */
+    background-clip: text;
+    /* hover:bg-clip-text */
+}
+
+.main-bg-background {
+    background: linear-gradient(to left, #3498db, #8e44ad);
+    /* hover:bg-gradient-to-tl from-blue-600 to-violet-600 */
+    color: white;
+    /* hover:text-transparent */
+    /* hover:bg-clip-text */
+}
+
+.main-bg-background:hover {
+    background: linear-gradient(to left, #8e44ad, #3498db);
+    /* hover:bg-gradient-to-tl from-blue-600 to-violet-600 */
+    color: white;
+    /* hover:text-transparent */
+    /* hover:bg-clip-text */
+}
+
+.main-section {
+    background-image: url("/static/Images/welcome-to-solmoon-animation.gif");
+    /* Used if the image is unavailable */
+    min-height: 100vh;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    padding-top: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(168, 85, 247);
+
+}
+
+.text-with-background {
+    color: transparent; /* Make the text transparent */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    background-clip: text; /* Standard property to support non-WebKit browsers */
+  }
+
+.btn-primary {
+    border-color: #007bce;
+    color: #007bce;
+}
+
+.btn-primary:hover {
+    background-color: #007bce;
+    border-color: #007bce;
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.bg-gradient {
+    background-image: url('./images/polygon-bg-element-dark.svg');
+    background-size: cover;
+
+}
+
+.pill-head-button {
+    background-color: rgb(31, 41, 55);
+    color: white;
+    border: 2px solid #686868;
+}
+
+.pill-head-button:hover {
+    background-color: rgb(31, 41, 55) !important;
+    border: 2px solid #ffffff;
+    color: white;
+}
+
+.link-header a:first-child {
+    color: rgb(234, 145, 34);
+    text-decoration: none;
+}
+
+.link-header a:first-child:hover {
+    text-decoration: underline;
+}
+
+.link-header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.link-header a:hover {
+    text-decoration: underline;
+}
+
+
+.customBg {
+    position: relative;
+    background: radial-gradient(circle at 50% 90%, #575094 0%, #321B3D 25%, #080d16 40%);
+    overflow: hidden;
+    /* border-bottom: 1px solid #606060; */
+    border-bottom: 1px solid rgb(168, 85, 247);
+    padding: 200px 0 500px 0;
+
+    padding: 0 1.5rem;
+}
+
+.customBg iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.customBg h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.customBg p {
+    max-width: 36rem;
+    margin: 0 auto 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.customBg ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.customBg ul li::before {
+    content: '✅';
+    margin-right: 0.5rem;
+    color: #38a169;
+}
+
+.customBg .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 2.5rem;
+}
+
+.customBg a.btn-white {
+    display: inline-block;
+    padding: 0.625rem 1.375rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 0.375rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.customBg a.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+.customBg a.btn-telegram {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gradiant-color {
+    background: linear-gradient(to bottom, #0f182a, black);
+}
+
+.bot-cards {
+    width: 20rem;
+    height: 30rem;
+    /* background-color: rgb(37, 99, 235); */
+    background-color: rgb(26, 25, 36);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 29px;
+}
+
+
+.Bots, .features, .Tok, .OBots {
+    border-bottom: 1px solid rgb(168, 85, 247);
+    padding: 200px 0 200px 0 !important;
+
+}
+
+
+.Tok {
+    background-color: rgb(14, 13, 24);
+    padding: 200px 0 200px 0 !important;
+}
+
+.Tok-cards:first-child {
+    border-top-left-radius: 23px;
+}
+
+.Tok-cards:last-child {
+    border-top-right-radius: 23px;
+}
+
+.Tok-cards {
+    height: 10rem;
+    border: 1px solid rgb(14, 13, 24);
+    background-color: rgb(26, 25, 36);
+}
+
+.Tok-cards-L2:first-child {
+    border-bottom-left-radius: 23px;
+}
+
+.Tok-cards-L2:last-child {
+    border-bottom-right-radius: 23px;
+}
+
+.Tok-cards-L2 {
+    height: 10rem;
+    border: 1px solid rgb(14, 13, 24);
+    background-color: rgb(26, 25, 36);
+}
+
+.buy {
+    background-image: url("../Images/squared-bg-element-dark.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 200px 0 200px 0 !important;
+    border-top: 1px solid rgb(168, 85, 247);
+    border-bottom: 1px solid rgb(168, 85, 247);
+
+
+}
+
+.custom-collapse {
+    background-color: transparent !important;
+    color: white;
+    font-weight: bold;
+
+}
+
+#Bots {
+    padding: 100px 0 100px 0;
+
+}
+
+#roadmap {
+    background-color: rgb(26, 25, 36);
+    position: relative;
+    padding: 200px 0 200px 0 !important;
+
+}
+
+#roadmap p.text-primary {
+    color: #0d6efd;
+}
+
+#roadmap h2.text-light {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#roadmap p.text-secondary-md {
+    color: #6c757d;
+    width: 75%;
+    text-align: justify;
+}
+
+#roadmap svg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.25rem;
+}
+
+#roadmap .phase {
+    margin: 0;
+    position: relative;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    width: 33rem;
+    background-color: var(--primary-color);
+    border-radius: 0.25rem;
+    padding: 1rem;
+}
+
+#roadmap .phase h3.text-light {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+}
+
+#roadmap .phase ul.text-secondary-md {
+    color: #ffffff;
+    margin-top: 0.5rem;
+}
+
+#roadmap .phase ul.text-secondary-md li {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+
+}
+
+.phase {
+    margin-bottom: 200px;
+}
+
+.phase-indicator {
+    position: absolute;
+    left: -130px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.phase-indicator .dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.phase-indicator .dot:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #374151;
+    border-radius: 50%;
+    left: 2px;
+    top: 2px;
+    z-index: 0;
+}
+
+.phase-indicator .dot:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+    z-index: 10;
+}
+
+.phase-indicator .label {
+    position: absolute;
+    right: 4px;
+    top: 2px;
+    width: 80px;
+}
+
+.phase-indicator .line {
+    position: absolute;
+    left: 75px;
+    width: 2px;
+    height: 110px;
+    background-color: #ffffff;
+    transform: translateY(-55%) rotate(90deg);
+    z-index: 30;
+    top: 16px;
+}
+
+
+/* third roadmap */
+.phase-indicator-l {
+    position: absolute;
+    right: -130px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.phase-indicator-l .dot-l {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: -20px;
+}
+
+.phase-indicator-l .dot-l:before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #374151;
+    border-radius: 50%;
+    right: 2px;
+    top: 2px;
+    z-index: 0;
+}
+
+.phase-indicator-l .dot-l:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    right: 5px;
+    top: 5px;
+    z-index: 10;
+}
+
+.phase-indicator-l .label-l {
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    width: 80px;
+}
+
+.phase-indicator-l .line-l {
+    position: absolute;
+    right: 75px;
+    width: 2px;
+    height: 110px;
+    background-color: #ffffff;
+    transform: translateY(-55%) rotate(90deg);
+    z-index: 30;
+    top: 16px;
+}
+
+.OBots {
+    background-color: rgb(15, 15, 15);
+}
+
+.OB-Cards {
+    width: 22rem;
+    background-color: transparent;
+}
+
+.svg-line{
+    position: absolute;
+    top: 750px;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.show-nav {
+    transform: translateY(0);
+}
+
+.hide-nav {
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #000000;
+    margin-top: auto;
+    border-top: 1px solid rgb(168, 85, 247);
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-brand h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-social i {
+    width: 20px;
+    height: 20px;
+    color: #ffffff;
+}
+
+.footer-join {
+    margin-top: 10px;
+}
+
+.footer-join h4 {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.footer-join a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #007bff;
+    font-weight: 600;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.footer-join a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+    border-color: #0056b3;
+}
+
+.mobile-phase{
+    display: none;
+}
+h1 {
+    font-size: 90px;
+    font-weight: 600;
+}
+
+.kanit-bold {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    /* Bold */
+}
+
+.rounded-circle {
+    display: inline-flex;
+    /* Makes the span behave like a flexbox container */
+    justify-content: center;
+    /* Centers the content horizontally */
+    align-items: center;
+    /* Centers the content vertically */
+    width: 30px;
+    /* Set a fixed width */
+    height: 30px;
+    /* Set the same value for height */
+}
+
+
+
+/* Adjust breakpoint if needed */
+.smaller-text {
+    font-size: 14px;
+}
+
+.kanit-regular {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    /* regular */
+}
+
+@media screen and (max-width: 1399px) {
+    .svg-line{
+        position: absolute;
+        top: 755px;
+    }
+    .phase-indicator {
+        position: absolute;
+        left: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .phase-indicator .line {
+        position: absolute;
+        left: 28px;
+        width: 2px;
+        height: 23px;
+        background-color: #ffffff;
+        transform: translateY(-55%) rotate(90deg);
+        z-index: 30;
+        top: 12px;
+    }
+
+
+    /* third roadmap */
+    .phase-indicator-l {
+        position: absolute;
+        right: -40px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .phase-indicator-l .line-l {
+        position: absolute;
+        right: 30px;
+        width: 2px;
+        height: 22px;
+        background-color: #ffffff;
+        transform: translateY(-55%) rotate(90deg);
+        z-index: 30;
+        top: 12px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .svg-line{
+        position: absolute;
+        top: 779px;
+    }
+    #roadmap .phase {
+        width: 27.5rem;
+    }
+}
+@media screen and (max-width: 992px) {
+    .svg-line{
+        position: absolute;
+        top: 989px;
+    }
+    #roadmap .phase {
+        width: 18.5rem;
+        font-size: 12px !important;
+    }
+    .phase-indicator {
+        position: absolute;
+        left: -62px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .phase-indicator .line {
+        position: absolute;
+        left: 35px;
+        width: 2px;
+        height: 49px;
+        background-color: #ffffff;
+        transform: translateY(-55%) rotate(90deg);
+        z-index: 30;
+        top: 12px;
+    }
+
+
+    /* third roadmap */
+    .phase-indicator-l {
+        position: absolute;
+        right: -62px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+
+    .phase-indicator-l .line-l {
+        position: absolute;
+        right: 35px;
+        width: 2px;
+        height: 49px;
+        background-color: #ffffff;
+        transform: translateY(-55%) rotate(90deg);
+        z-index: 30;
+        top: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .phase-indicator-l, .phase-indicator {
+        display: none;
+    }
+    .main-section{
+        padding-top: 80px;
+    }
+    h1 {
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .adjusted-y2{
+        /* box-shadow: 0px 0px 15px red !important; */
+        stroke: #3498db!important;
+        stroke-width: 10 !important;
+    }
+    .mobile-phase{
+        display: block;
+        border-bottom: 2px solid #3498db;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        /* text-shadow: 0px 0px 2px white; */
+        box-shadow: -2px 2px 5px #8e44ad;
+
+        /* background: linear-gradient(to left, #3498db, #8e44ad); */
+    }
+
+    #roadmap .phase {
+        width: 25rem;
+        margin-bottom: 40px;
+    }
+    #roadmap .phase ul {
+        border-right: 3px solid #8e44ad;
+        border-left: 3px solid #8e44ad;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #roadmap .phase {
+        width: 17rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Tok-cards-L2:first-child, .Tok-cards-L2:last-child, .Tok-cards:first-child, .Tok-cards:last-child {
+        border-radius: 0px;
+    }
+}
+
